@@ -1,6 +1,14 @@
 /**
 FOR D.E. SHAW
-Lines 83 - 125 is a method that calculates the Legendre symbol of two primes passed to it. This showcases some of my favorite facts of elementary number theory. The beginning is Gauss's Lemma, which handles the case that the numerator is 2. This needs to be done because the rest of the method uses the Law of Quadratic Reciprocity, which works only with distinct, odd primes. For an arbitrary number and a prime q not equal to 2, the Legendre symbol of each prime factor of the numerator, reduced mod q, is calculated by this method. It outputs 1 or -1, depending on whether or not p is a quadratic residue in Z_q. The outputs are multiplied and this returns whether the original number is a quadratic residue in Z_q. This is actually a fairly bad way to calulate the Legendre symbol; modular congruence in the numerator and the fact that is completely multiplicative can be exploited for a much more efficient calculation, but I designed this program specifically to showcase the Law of Quadratic Reciprocity.
+Lines 83 - 125 is a method that calculates the Legendre symbol of two primes passed to it. 
+This showcases some of my favorite facts of elementary number theory. The beginning is Gauss's Lemma, which handles the case that the numerator is 2. 
+This needs to be done because the rest of the method uses the Law of Quadratic Reciprocity, which works only with distinct, odd primes. 
+For an arbitrary number and a prime q not equal to 2, the Legendre symbol of each prime factor of the numerator, reduced mod q, is calculated by this method. 
+It outputs 1 or -1, depending on whether or not p is a quadratic residue in Z_q. 
+The outputs are multiplied and this returns whether the original number is a quadratic residue in Z_q. 
+This is actually a fairly bad way to calulate the Legendre symbol; 
+modular congruence in the numerator and the fact that is completely multiplicative can be exploited for a much more efficient calculation, 
+but I designed this program specifically to showcase the Law of Quadratic Reciprocity.
 */
 
 package QuadRes;
